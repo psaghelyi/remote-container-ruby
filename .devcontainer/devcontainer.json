@@ -38,9 +38,9 @@
 	// "shutdownAction": "none",
 
 	// Uncomment the next line to run commands after the container is created - for example installing curl.
-	"postCreateCommand": "cd myapp && rake db:create",
+	"postCreateCommand": "cd myapp && gem install ruby-debug-ide && gem install debase && rake db:create",
 
-	"postStartCommand": "rm -f tmp/pids/server.pid && cd myapp && bundle exec rails s -p 3000 -b '0.0.0.0'"
+	// "postStartCommand": "rm -f tmp/pids/server.pid && cd myapp && bundle exec rails s -p 3000 -b '0.0.0.0'"
 
 	// Uncomment to connect as a non-root user if you've added one. See https://aka.ms/vscode-remote/containers/non-root.
 	// "remoteUser": "vscode"
